@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logopaste from "@/assets/logo/logopaste.png";
+import { IoSearch } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -36,6 +37,12 @@ export default function Home() {
                 Membership
               </a>
             </li>
+          </div>
+          <div className="flex justify-start items-center border-[1px] border-stone-400 w-[430px] h-[37px] rounded-md ml-8 text-stone-400 text-xs">
+            <IoSearch className="text-stone-400 w-5 h-5 ml-4" />
+            <p className="ml-4">
+              Search for specific componants, sections, wireframe, and more...
+            </p>
           </div>
         </div>
       </div>
