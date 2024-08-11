@@ -60,10 +60,16 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  .border-border {
+    border-color: var(
+      --border
+    ); /* Assure-toi que la variable CSS est définie */
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: var(
+      --background
+    ); /* Applique la couleur de fond définie */
+    color: var(--foreground); /* Applique la couleur du texte définie */
   }
 }
