@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/ui/accordion";
+} from "@/components/ui/accordion";
 import React from "react";
 import { motion } from "framer-motion";
 import { TbBolt } from "react-icons/tb";
