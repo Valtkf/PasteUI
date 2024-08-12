@@ -12,6 +12,8 @@ import { BsStars } from "react-icons/bs";
 import { IoBookmarkOutline } from "react-icons/io5";
 import { FaRegStar } from "react-icons/fa";
 import { useState } from "react";
+import FigmaIcon from "@/assets/logo/FigmaIcon";
+import WebflowIcon from "@/assets/logo/WebflowIcon";
 
 export default function Sidebar() {
   const [activeItem, setActiveItem] = useState<string | null>(null);
@@ -39,8 +41,13 @@ export default function Sidebar() {
           }}
           transition={{ duration: 0.3 }}
         >
-          <AccordionContent>Webflow</AccordionContent>
-          <AccordionContent>Figma</AccordionContent>
+          <AccordionContent className="flex justify-start gap-2">
+            <WebflowIcon />
+            Webflow
+          </AccordionContent>
+          <AccordionContent className="flex justify-start gap-2">
+            <FigmaIcon /> Figma
+          </AccordionContent>
         </motion.div>
       </AccordionItem>
       <AccordionItem value="item-2">
