@@ -15,7 +15,22 @@ export default function Home() {
             <ButtonOutline />
           </div>
         </div>
-        <div className="border-2 border-red-400 rounded-br-3xl min-h-screen flex-grow bg-[#121212]"></div>
+        <div className="p-6 border-2 border-red-400 rounded-br-3xl min-h-screen flex-grow bg-[#121212]">
+          <div className="border-2 border-blue-500 w-[532px] h-[388px] ">
+            <div className="flex justify-start gap-2">
+              <h1 className="text-white text-3xl font-medium">Hero Section</h1>
+              <span className="text-[#FF7A00] text-sm font-medium py-2">
+                pro
+              </span>
+            </div>
+            <div>
+              <p className="text-[#7E7F81] text-sm font-normal pt-8">
+                Detailed header section with heading and graphic/image centred
+                and feature cards on either side.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
