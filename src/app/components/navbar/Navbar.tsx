@@ -5,7 +5,7 @@ import { FiUser } from "react-icons/fi";
 
 export default function Navbar() {
   return (
-    <div className="rounded-t-3xl bg-[#121212]">
+    <div className="px-20 rounded-t-3xl bg-[#121212]">
       <div className="flex h-[85px] justify-start items-center">
         <div className=" w-[96px]  ">
           <Image src={logopaste} alt="" />
