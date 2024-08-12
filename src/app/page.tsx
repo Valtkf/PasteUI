@@ -3,6 +3,7 @@
 import { ButtonOutline } from "@/components/Button";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
+import SectionHero from "./components/hero-section/SectionHero";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
             <ButtonOutline />
           </div>
         </div>
-        <div className="border-2 border-red-400 rounded-br-3xl min-h-screen flex-grow bg-[#121212]"></div>
+        <SectionHero />
       </div>
     </main>
   );
