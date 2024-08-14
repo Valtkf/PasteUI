@@ -3,6 +3,80 @@ import { Button } from "@/components/ui/button";
 import WebflowIcon from "@/assets/logo/WebflowIcon";
 import FigmaIcon from "@/assets/logo/FigmaIcon";
 import { LuEye } from "react-icons/lu";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import Image from "next/image";
+import { IoBookmarkOutline } from "react-icons/io5";
+
+export interface Artwork {
+  artist: string;
+  art: string;
+}
+
+export const images = [
+  {
+    id: 1,
+    src: "https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 1",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 2,
+    src: "https://images.unsplash.com/photo-1548516173-3cabfa4607e9?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 2",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 3,
+    src: "https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 3",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 4,
+    src: "https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 1",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 5,
+    src: "https://images.unsplash.com/photo-1548516173-3cabfa4607e9?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 2",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 6,
+    src: "https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 3",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 7,
+    src: "https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 1",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 8,
+    src: "https://images.unsplash.com/photo-1548516173-3cabfa4607e9?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 2",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+  {
+    id: 9,
+    src: "https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80",
+    alt: "Image 3",
+    title: "HERO SECTION",
+    dateAdded: "Added 28th of Feb 2024",
+  },
+];
 
 export default function SectionHero() {
   return (
@@ -46,7 +120,43 @@ export default function SectionHero() {
         <h1 className="text-white text-[26px]">
           Other sections you might like{" "}
         </h1>
-        <div className="border-2 border-green-400 w-full h-[350px] mt-10"></div>
+        <div className="border-2 border-green-400 w-full h-[350px] mt-10">
+          <div className=" p-4 h-[350px] overflow-hidden">
+            <ScrollArea className="h-full overflow-y-scroll">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {images.map((image) => (
+                  <div key={image.id} className="w-full">
+                    <div className="relative w-full h-[218px]">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-md"
+                      />
+                    </div>
+                    <div className="mt-2 text-center">
+                      <div className="flex justify-start">
+                        <h3 className="text-sm font-medium text-white pb-1 ">
+                          {image.title}{" "}
+                          <span className="text-[#FF7A00]">Pro</span>
+                        </h3>
+                        <IoBookmarkOutline
+                          size={20}
+                          className="text-gray-400 ml-20"
+                        />
+                      </div>
+                      <p className="text-sm font-normal text-gray-400 flex justify-start">
+                        {image.dateAdded}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <ScrollBar orientation="vertical" />
+            </ScrollArea>
+          </div>
+        </div>
       </div>
     </div>
   );
