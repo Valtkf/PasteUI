@@ -2,13 +2,14 @@ import Image from "next/image";
 import logopaste from "@/assets/logo/logopaste.png";
 import { IoSearch } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
+import PasteIcon from "@/assets/logo/PasteIcon";
 
 export default function Navbar() {
   return (
     <div className="px-20 rounded-t-3xl bg-[#121212]">
       <div className="flex h-[85px] justify-start items-center">
-        <div className=" w-[96px]  ">
-          <Image src={logopaste} alt="" />
+        <div className=" mr-4 w-full  ">
+          <PasteIcon />
         </div>
         <div className="">
           <li className="flex items-center space-x-8 border-x-[1px] border-[#1D1D1D] pt-4 pb-4 pl-8 pr-8 h-[24px]">

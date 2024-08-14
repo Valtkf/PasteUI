@@ -42,6 +42,12 @@ export default function SectionHero() {
 
         <div className=" border-[1px] border-[#292929] rounded-xl w-full md:w-[50%] h-[388px] flex-shrink-0"></div>
       </div>
+      <div className="border-2 border-blue-400 w-full h-[480px] pt-12">
+        <h1 className="text-white text-[26px]">
+          Other sections you might like{" "}
+        </h1>
+        <div className="border-2 border-green-400 w-full h-[350px] mt-10"></div>
+      </div>
     </div>
   );
 }
