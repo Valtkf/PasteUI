@@ -9,7 +9,7 @@ export default function SectionHero() {
   return (
     <div className="p-6 border-2 border-red-400 rounded-br-3xl min-h-screen flex-grow bg-[#121212]">
       <div className="flex flex-col md:flex-row flex-grow">
-        <div className=" w-full md:w-[48%] h-[388px] mb-4 md:mb-0 flex flex-col justify-between mr-4">
+        <div className=" w-full md:w-[48%] sm:h-[200px] h-[300px] mb-4 md:mb-0 flex flex-col justify-between mr-4">
           <div>
             <div className="flex justify-start gap-2">
               <h1 className="text-white text-3xl font-medium">Hero Section</h1>
@@ -23,7 +23,7 @@ export default function SectionHero() {
             </p>
           </div>
 
-          <div className=" w-full h-[116px] mt-auto">
+          <div className=" w-full h-[116px] md:mt-[100px] lg:mt-[204px]">
             <div className=" w-full h-[50px] flex">
               <Button variant="outline" className="gap-1 w-1/2 mr-2">
                 <WebflowIcon />
@@ -41,7 +41,7 @@ export default function SectionHero() {
           </div>
         </div>
 
-        <div className=" border-[1px] border-[#292929] rounded-xl w-full md:w-[50%] h-[388px] flex-shrink-0"></div>
+        <div className=" border-[1px] border-[#292929] rounded-xl w-full md:w-[50%] sm:h-[200px] sm:mt-[60px] md:h-[320px] md:mt-[40px] lg:h-[388px] flex-shrink-0"></div>
       </div>
       <OtherSections />
     </div>
