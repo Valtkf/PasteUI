@@ -3,12 +3,13 @@ import logopaste from "@/assets/logo/logopaste.png";
 import { IoSearch } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 import PasteIcon from "@/assets/logo/PasteIcon";
+import { CommandDemo } from "@/components/ui/SearchBar";
 
 export default function Navbar() {
   return (
     <div className="px-20 rounded-t-3xl bg-[#121212]">
       <div className="flex h-[85px] justify-start items-center">
-        <div className=" mr-4 w-full  ">
+        <div className=" mr-4 w-full ">
           <PasteIcon />
         </div>
         <div className="">
@@ -39,18 +40,15 @@ export default function Navbar() {
             </a>
           </li>
         </div>
-        <div className="w-full max-w-[800px] px-4 sm:px-8">
+        {/* <div className="w-full max-w-[800px] px-4 sm:px-8">
           <div className="flex justify-start items-center h-[37px] rounded-md text-stone-400 text-xs font-normal bg-[#1D1D1D]">
             <IoSearch className="text-stone-400 w-5 h-5 ml-2 sm:ml-4" />
-            <input
-              className="ml-2 sm:ml-4 mr-2 bg-transparent outline-none flex-grow text-white"
-              placeholder="Search for specific components, sections, wireframes, and more..."
-              spellCheck="false"
-              type="text"
-            />
+            <button className="ml-2 sm:ml-4 mr-2 bg-transparent outline-none flex-grow text-stone-400">
+              Search for specific components, sections, wireframes, and more...
+            </button>
           </div>
-        </div>
-
+        </div> */}
+        <CommandDemo />
         <div className="border-[1px] border-[#1D1D1D] rounded-md mx-4 h-[38px] w-[38px] flex items-center justify-center aspect-square">
           <FiUser className="text-white w-10 h-6" />
         </div>

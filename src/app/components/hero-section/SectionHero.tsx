@@ -23,7 +23,7 @@ export default function SectionHero() {
             </p>
           </div>
 
-          <div className=" w-full h-[116px] md:mt-[100px] lg:mt-[204px]">
+          <div className=" w-full h-[116px] sm:mt-[40px] md:mt-[100px] lg:mt-[204px]">
             <div className=" w-full h-[50px] flex">
               <Button variant="outline" className="gap-1 w-1/2 mr-2">
                 <WebflowIcon />
