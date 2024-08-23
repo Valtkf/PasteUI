@@ -16,7 +16,7 @@ import FigmaIcon from "@/assets/logo/FigmaIcon";
 import WebflowIcon from "@/assets/logo/WebflowIcon";
 
 export default function Sidebar() {
-  const [activeItem, setActiveItem] = useState<string | null>(null);
+  const [activeItem, setActiveItem] = useState<string | undefined>(undefined);
   return (
     <Accordion
       type="single"
