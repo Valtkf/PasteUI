@@ -20,10 +20,10 @@ export default function Carousel() {
   };
 
   return (
-    <div className="w-full h-[350px] mt-10">
+    <div className="w-full h-[350px] sm:mt-2 md:mt-10 mt-10">
       <div className="p-2 h-[350px] overflow-hidden">
         <ScrollArea className="h-full overflow-y-scroll">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {images.map((image) => (
               <div key={image.id} className="w-full">
                 <div className="relative w-full h-[218px]">
